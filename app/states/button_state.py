@@ -8,3 +8,7 @@ class ButtonState(rx.State):
     def increment(self):
         self.count += 1
 
+    @rx.event
+    def decrement(self):
+        self.count -= 1
+
